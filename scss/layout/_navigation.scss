@@ -4,13 +4,17 @@ nav {
 		display: flex;
 		column-gap: 3.3rem;
 	}
-	li {
+	.nav__link {
 		font-size: 2rem;
 		line-height: 1.5;
 		color: black;
 		font-family: $heebo;
 		font-weight: 500;
 	}
+	.nav__link:hover {
+		color: $color-primary;
+	}
+
 	@include responsive(max-phone) {
 		z-index: 10;
 		position: fixed;
