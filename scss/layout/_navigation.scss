@@ -1,0 +1,36 @@
+nav {
+	margin-left: auto;
+	ul {
+		display: flex;
+		column-gap: 3.3rem;
+	}
+	li {
+		font-size: 2rem;
+		line-height: 1.5;
+		color: black;
+		font-family: $heebo;
+		font-weight: 500;
+	}
+	@include responsive(max-phone) {
+		z-index: 10;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: -2.7rem;
+		@include responsive(max-phone) {
+			background: rgba(0, 0, 0, 0.7);
+			padding-top: 20rem;
+		}
+
+		ul {
+			flex-direction: column;
+			text-align: center;
+			gap: 5rem;
+			a {
+				color: white;
+				font-size: 3rem;
+				letter-spacing: 0.7rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+.hero {
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 7.1rem;
+		@include responsive(max-phone) {
+			flex-direction: column-reverse;
+			align-items: center;
+		}
+	}
+	&__info {
+		width: 49.7rem;
+		@include responsive(max-phone) {
+			max-width: 80vw;
+			text-align: center;
+		}
+	}
+	&__subt {
+		font-size: 1.6rem;
+		line-height: 1.43;
+		color: $color-dark;
+		margin-bottom: 3.8rem;
+		
+	}
+	&__button {
+		width: 20.8rem;
+		height: 4.7rem;
+		background-color: $color-primary;
+
+		color: white;
+	}
+	&__img {
+		@include responsive(max-phone) {
+			width: 20rem;
+			height: 20rem;
+		}
+		@include responsive(phone) {
+			width: 17rem;
+			height: 17rem;
+		}
+	}
+	button {
+		border-radius: 0.2 rem;
+	}
+}

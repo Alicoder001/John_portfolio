@@ -1,0 +1,8 @@
+.header {
+	padding: 2.7rem 0;
+	margin-bottom: 15.8rem;
+	&__container {
+		display: flex;
+		max-width: $container + 88px;
+	}
+}

@@ -1,0 +1,17 @@
+button {
+	border: 0;
+	cursor: pointer;
+}
+.header__button {
+	z-index: 10;
+	margin-left: auto;
+	display: none;
+	user-select: none;
+
+	@include responsive(max-phone) {
+		display: block;
+	}
+}
+.header__button:hover {
+	cursor: pointer;
+}
