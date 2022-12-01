@@ -16,6 +16,7 @@
 		line-height: 2.1rem;
 	}
 }
-.icon-link:hover {
-	fill: black;
+
+path:hover {
+	fill: $color-primary;
 }
