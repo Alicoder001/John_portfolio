@@ -10,10 +10,13 @@ button:hover {
 	margin-left: auto;
 	display: none;
 	user-select: none;
-
 	@include responsive(max-phone) {
 		display: block;
 	}
+}
+.year-button:hover {
+	background-color: $color-primary;
+	color: $color-dark;
 }
 .header__button:hover {
 	cursor: pointer;
