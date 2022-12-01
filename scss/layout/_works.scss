@@ -16,6 +16,7 @@
 		display: flex;
 		gap: 1.8rem;
 		padding-bottom: 3.5rem;
+		align-items: center;
 
 		@include responsive(min-tablet) {
 			flex-direction: column;
@@ -23,12 +24,7 @@
 				width: 80vw;
 				height: inherit;
 			}
-		}
-		@include responsive(phone) {
-			&-img {
-				width: 80vw;
-				height: inherit;
-			}
+			justify-content: center;
 		}
 	}
 	@include responsive(min-tablet) {
@@ -39,6 +35,9 @@
 	&__item-infos {
 		display: flex;
 		flex-direction: column;
+		@include responsive(min-tablet) {
+			width: 80vw;
+		}
 	}
 	&__item-title {
 		font-size: 3rem;
@@ -52,13 +51,9 @@
 		display: flex;
 		gap: 2.6rem;
 		margin-bottom: 1.7rem;
-		width: 100%;
 	}
 	&__item-subt {
 		padding-bottom: 3rem;
-		@include responsive(max-phone) {
-			width: 80vw;
-		}
 	}
 	.year-button {
 		width: 6.2rem;
