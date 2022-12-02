@@ -20,7 +20,8 @@ nav {
 		position: fixed;
 		width: 100%;
 		height: 100%;
-		top: -2.7rem;
+		top: 0;
+		left: 0;
 		@include responsive(max-phone) {
 			background: rgba(70, 5, 130, 0.7);
 			padding-top: 20rem;
