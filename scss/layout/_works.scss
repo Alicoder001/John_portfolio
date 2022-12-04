@@ -10,6 +10,9 @@
 		flex-direction: column;
 		gap: 3.1rem;
 		margin-bottom: 8.3rem;
+		@include responsive(min-tablet) {
+			gap: 2.2rem;
+		}
 	}
 	&__item {
 		border-bottom: 1px solid $gray;
@@ -17,6 +20,12 @@
 		gap: 1.8rem;
 		padding-bottom: 3.5rem;
 		align-items: center;
+		@include responsive(min-tablet) {
+			padding-bottom: 1.7rem;
+			p {
+				padding: 0;
+			}
+		}
 
 		@include responsive(min-tablet) {
 			flex-direction: column;
@@ -27,11 +36,7 @@
 			justify-content: center;
 		}
 	}
-	@include responsive(min-tablet) {
-		&__item:not(:first-child) {
-			display: none;
-		}
-	}
+
 	&__item-infos {
 		display: flex;
 		flex-direction: column;
@@ -55,20 +60,25 @@
 	&__item-subt {
 		padding-bottom: 3rem;
 	}
-	.year-button {
-		width: 6.2rem;
-		height: 2.5rem;
-		border-radius: 16px;
-		background-color: $color-time-1;
-		color: white;
-		font-weight: 900;
-		font-size: 1.8rem;
-		padding: 0.4rem;
-	}
-	.indikator {
-		font-weight: 400;
-		font-size: 2rem;
-		line-height: 2.9rem;
-		color: #8695a4;
+}
+.year-button {
+	width: 6.2rem;
+	height: 2.5rem;
+	border-radius: 16px;
+	background-color: $color-time-1;
+	color: white;
+	font-weight: 900;
+	font-size: 1.8rem;
+	padding: 0.4rem;
+}
+.indikator {
+	font-weight: 400;
+	font-size: 2rem;
+	line-height: 2.9rem;
+	color: #8695a4;
+}
+@include responsive(min-tablet) {
+	.hide:not(:first-child) {
+		display: none;
 	}
 }

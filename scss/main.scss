@@ -11,7 +11,7 @@
 
 // 4. Layout-related sections
 @import "layout/header", "layout/hero.scss", "layout/resent", "layout/works",
-	"layout/sidebar", "layout/blog-hero.scss", "layout/navigation",
+	"layout/blog-hero.scss", "layout/work-details", "layout/navigation",
 	"layout/footer";
 
 // 5. Components
@@ -20,5 +20,5 @@
 // 6. Page-specific styles
 @import "pages/home";
 @import "pages/blog";
-@import "pages/work-detail";
+
 @import "pages/work";

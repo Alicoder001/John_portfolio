@@ -1,0 +1,51 @@
+.detail__header {
+	margin-bottom: 7.8rem;
+}
+.detail {
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__title {
+		width: 68.2rem;
+		margin-bottom: 3.2rem;
+		font-size: 3.4rem;
+		@include responsive(tablet) {
+			width: 90.4vw;
+		}
+		@include responsive(max-phone) {
+			font-size: 3rem;
+		}
+	}
+	&__list {
+		width: 68.2rem;
+		@include responsive(tablet) {
+			width: 90.4vw;
+		}
+	}
+	&__item {
+		margin-bottom: 5.4rem;
+	}
+	.indicator {
+		display: flex;
+		gap: 1.7rem;
+		&_text {
+			font-size: 2rem;
+			@include responsive(max-phone) {
+				font-size: 1.8rem;
+			}
+		}
+		margin-bottom: 2.3rem;
+	}
+	&__subt {
+		margin-bottom: 4.6rem;
+	}
+	&_img {
+		width: 68.2rem;
+		@include responsive(tablet) {
+			width: 90.4vw;
+			height: inherit;
+		}
+	}
+}
