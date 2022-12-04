@@ -1,0 +1,55 @@
+.blog__header {
+	margin-bottom: 106px;
+}
+.blog {
+	.container {
+		max-width: 1152px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__title {
+		margin-bottom: 5.5rem;
+		width: 682px;
+		@include responsive(tablet) {
+			width: 90.4vw;
+		}
+		@include responsive(max-phone) {
+			margin-bottom: 1.8rem;
+		}
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 3.2rem;
+		margin-bottom: 10.5rem;
+		width: 682px;
+		@include responsive(tablet) {
+			width: 90.4vw;
+		}
+	}
+
+	&__item {
+		padding: 0;
+		padding-bottom: 2.9rem;
+		border-bottom: 1px solid #e0e0e0;
+		&-title {
+			margin-bottom: 0.2rem;
+			font-size: 3rem;
+			@include responsive(min-tablet) {
+				font-size: 2.6rem;
+			}
+		}
+	}
+	&__info {
+		p {
+			font-size: 2rem;
+			@include responsive(max-phone) {
+				font-size: 1.6rem;
+			}
+		}
+		.info {
+			color: #8695a4;
+		}
+	}
+}

@@ -11,7 +11,8 @@
 
 // 4. Layout-related sections
 @import "layout/header", "layout/hero.scss", "layout/resent", "layout/works",
-	"layout/sidebar", "layout/navigation", "layout/footer";
+	"layout/sidebar", "layout/blog-hero.scss", "layout/navigation",
+	"layout/footer";
 
 // 5. Components
 @import "components/button";
